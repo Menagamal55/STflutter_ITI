@@ -12,7 +12,7 @@ This repository documents my journey of learning Dart through daily coding exerc
 - Conditions
 
 ## 📅 Day 2
-- Functions
+- Functions with there different type
 - Parameters & Return Types
 - Optional Parameters
 - Classes & Objects
