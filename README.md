@@ -20,7 +20,7 @@ This repository documents my journey of learning Dart through daily coding exerc
 - Methods
 - Basic OOP Concepts
 
-- ## 📅 Day 3  & ## 📅 Day 4
+- ## 📅 Day 3  &  📅 Day 4
 - flutter ui
 - store ui
 
