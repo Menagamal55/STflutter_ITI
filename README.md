@@ -20,6 +20,10 @@ This repository documents my journey of learning Dart through daily coding exerc
 - Methods
 - Basic OOP Concepts
 
+- ## 📅 Day 3  & ## 📅 Day 4
+- flutter ui
+- store ui
+
 ### 🎯 Goal
 Build a strong foundation in Dart to become a Flutter Developer and prepare for the ITI program.
 
