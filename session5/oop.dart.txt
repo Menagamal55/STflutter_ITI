@@ -1,0 +1,130 @@
+// ===============================
+// Encapsulation + Abstraction
+// ===============================
+
+// Abstract Class
+abstract class Animal {
+  // Abstract Method
+  void sound();
+}
+
+// ===============================
+// Interface
+// Any class can be used as Interface in Dart
+// ===============================
+
+class Walkable {
+  void walk() {}
+}
+
+// ===============================
+// Dog Class
+// extends -> Abstraction
+// implements -> Interface
+// ===============================
+
+class Dog extends Animal implements Walkable {
+  // Encapsulation
+  String _name;
+
+  Dog(this._name);
+
+  // Getter
+  String getName() {
+    return _name;
+  }
+
+  // Setter
+  void setName(String name) {
+    _name = name;
+  }
+
+  // Polymorphism
+  @override
+  void sound() {
+    print("Dog Sound : Bark Bark");
+  }
+
+  @override
+  void walk() {
+    print("Dog is Walking");
+  }
+}
+
+// ===============================
+// Cat Class
+// ===============================
+
+class Cat extends Animal implements Walkable {
+  String _name;
+
+  Cat(this._name);
+
+  String getName() {
+    return _name;
+  }
+
+  void setName(String name) {
+    _name = name;
+  }
+
+  @override
+  void sound() {
+    print("Cat Sound : Meow");
+  }
+
+  @override
+  void walk() {
+    print("Cat is Walking");
+  }
+}
+
+// ===============================
+// Main Function
+// ===============================
+
+void main() {
+  print("===== DOG =====");
+
+  Dog dog = Dog("Rocky");
+
+  print(dog.getName());
+
+  dog.sound();
+
+  dog.walk();
+
+  dog.setName("Max");
+
+  print(dog.getName());
+
+  print("");
+
+  print("===== CAT =====");
+
+  Cat cat = Cat("Kitty");
+
+  print(cat.getName());
+
+  cat.sound();
+
+  cat.walk();
+
+  cat.setName("Luna");
+
+  print(cat.getName());
+
+  print("");
+
+  print("===== POLYMORPHISM =====");
+
+  Animal animal;
+
+  animal = Dog("Tom");
+
+  animal.sound();
+
+  animal = Cat("Mimi");
+
+  animal.sound();
+}
